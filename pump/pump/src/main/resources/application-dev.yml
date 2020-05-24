@@ -1,0 +1,18 @@
+#开发环境配置文件
+
+#服务配置
+server:
+   port: 7900
+   servlet:
+      context-path: /fl
+
+#属性配置      
+minMoney: 0.01
+description: 最少金额为：${minMoney}
+
+#对象配置（spring boot 2.x 中对配置文件中名称的命名规范进行了强制约束，
+#需要使用kebab格式，不能使用java中的驼峰式写法了，分隔符使用 ’-‘ 来分隔）
+amount-config:
+   minAmount: 0.01
+   maxAmount: 1
+   remark: 最小金额为：${amount-config.minAmount}，最大金额为：${amount-config.maxAmount}
