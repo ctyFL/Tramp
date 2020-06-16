@@ -160,7 +160,7 @@
 		        15，delimitAllColumns：设置是否所有生成的SQL中的列名都使用标识符引起来。默认为false，delimitIdentifiers参考context的属性
 		        
 		        注意，table里面很多参数都是对javaModelGenerator，context等元素的默认属性的一个复写；-->
-         <table tableName="PropCustomer"> 
+        <!-- <table tableName="PropCustomer"> -->
         <table tableName="%">
         	<!-- generatedKey用于生成生成主键的方法，
 	                                    如果设置了该元素，MBG会在生成的<insert>元素中生成一条正确的<selectKey>元素，该元素可选
