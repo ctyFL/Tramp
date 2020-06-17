@@ -1,0 +1,4 @@
+#项目使用的配置文件版本（dev-开发环境  prod-生产环境）
+spring: 
+   profiles:
+      active: dev
