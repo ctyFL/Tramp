@@ -47,6 +47,12 @@
         </dependency>
         
         <!--MyBatis分页插件-->
+        <!--MyBatis分页插件，简单的几行代码就能实现分页，在与SpringBoot整合时，只要整合了PagerHelper就自动整合了MyBatis-->
+        <!-- PageHelper.startPage(pageNum, pageSize);
+			//之后进行查询操作将自动进行分页
+			List<Useraccount> userList = useraccountMapper.selectByExample(new UseraccountExample());
+			//通过构造PageInfo对象获取分页信息，如当前页码，总页数，总条数
+			PageInfo<Useraccount> pageInfo = new PageInfo<Useraccount>(list); -->
         <dependency>
             <groupId>com.github.pagehelper</groupId>
             <artifactId>pagehelper-spring-boot-starter</artifactId>
