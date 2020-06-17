@@ -23,7 +23,7 @@ public class Generator {
 		
 		/**读取generatorConfig.xml配置文件 
 		 * 1.Class.getResourceAsStream(String path) ：
-	     *	 path 不以'/'开头时默认是从此类所在的包下取资源，以'/'开头则是从classpath(Src根目录)根下获取。
+	     *	 path不以'/'开头时默认是从此类所在的包下取资源，以'/'开头则是从classpath(Src根目录)根下获取。
 		 * 2.ClassLoader.getResourceAsStream()  无论要查找的资源前面是否带'/' 都会从classpath的根路径下查找。
 		 */
 		InputStream is = Generator.class.getResourceAsStream("/generatorConfig.xml");
